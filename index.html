@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школьный сайт</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Моу Дедовская Сош №1</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#schedule">Расписание</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Добро пожаловать в нашу школу!</h2>
+            <p>Здесь вы найдете всю необходимую информацию: расписание, контакты и многое другое.</p>
+        </div>
+    </section>
+
+    <section id="schedule">
+        <div class="container">
+            <h2>Расписание</h2>
+
+            <!-- Кнопки выбора классов -->
+            <div class="class-selection">
+                <button class="class-button" data-class="5a">5А</button>
+                <button class="class-button" data-class="5b">5Б</button>
+                <button class="class-button" data-class="6a">6А</button>
+                <button class="class-button" data-class="6b">6Б</button>
+                <button class="class-button" data-class="7a">7А</button>
+                <button class="class-button" data-class="7b">7Б</button>
+                <button class="class-button" data-class="8a">8А</button>
+                <button class="class-button" data-class="8b">8Б</button>
+                <button class="class-button" data-class="9a">9А</button>
+                <button class="class-button" data-class="9b">9Б</button>
+                <button class="class-button" data-class="10a">10А</button>
+                <button class="class-button" data-class="10b">10Б</button>
+                <button class="class-button" data-class="11a">11А</button>
+                <button class="class-button" data-class="11b">11Б</button>
+            </div>
+            
+            <!-- Расписание -->
+            <table id="schedule-table">
+                <thead>
+                    <tr>
+                        <th>День</th>
+                        <th>Урок 1</th>
+                        <th>Урок 2</th>
+                        <th>Урок 3</th>
+                        <th>Урок 4</th>
+                        <th>Урок 5</th>
+                        <th>Урок 6</th>
+                        <th>Урок 7</th>
+                        <th>Урок 8</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- 5А класс -->
+                    <tr class="schedule-5a">
+                        <td>Понедельник</td>
+                        <td>Химия</td>
+                        <td>Математика</td>
+                        <td>Русский</td>
+                        <td>Физика</td>
+                        <td>Информатика</td>
+                        <td>Литература</td>
+                        <td>География</td>
+                        <td>Физкультура</td>
+                    </tr>
+                    <tr class="schedule-5a">
+                        <td>Вторник</td>
+                        <td>Биология</td>
+                        <td>Математика</td>
+                        <td>География</td>
+                        <td>Химия</td>
+                        <td>Физика</td>
+                        <td>История</td>
+                        <td>Физкультура</td>
+                        <td>Технология</td>
+                    </tr>
+                    <!-- 5Б класс -->
+                    <tr class="schedule-5b" style="display: none;">
+                        <td>Понедельник</td>
+                        <td>Физика</td>
+                        <td>Математика</td>
+                        <td>Литература</td>
+                        <td>География</td>
+                        <td>Химия</td>
+                        <td>Информатика</td>
+                        <td>История</td>
+                        <td>Физкультура</td>
+                    </tr>
+                    <tr class="schedule-5b" style="display: none;">
+                        <td>Вторник</td>
+                        <td>Биология</td>
+                        <td>Математика</td>
+                        <td>География</td>
+                        <td>Русский</td>
+                        <td>Физика</td>
+                        <td>Литература</td>
+                        <td>История</td>
+                        <td>Физкультура</td>
+                    </tr>
+                    <!-- 6А класс -->
+                    <tr class="schedule-6a" style="display: none;">
+                        <td>Понедельник</td>
+                        <td>Химия</td>
+                        <td>Математика</td>
+                        <td>Русский</td>
+                        <td>Физика</td>
+                        <td>Информатика</td>
+                        <td>Литература</td>
+                        <td>География</td>
+                        <td>Физкультура</td>
+                    </tr>
+                    <tr class="schedule-6a" style="display: none;">
+                        <td>Вторник</td>
+                        <td>Биология</td>
+                        <td>Математика</td>
+                        <td>География</td>
+                        <td>Химия</td>
+                        <td>Физика</td>
+                        <td>История</td>
+                        <td>Физкультура</td>
+                        <td>Технология</td>
+                    </tr>
+                    <!-- 6Б класс -->
+                    <tr class="schedule-6b" style="display: none;">
+                        <td>Понедельник</td>
+                        <td>Химия</td>
+                        <td>Математика</td>
+                        <td>Русский</td>
+                        <td>Физика</td>
+                        <td>Информатика</td>
+                        <td>Литература</td>
+                        <td>География</td>
+                        <td>Физкультура</td>
+                    </tr>
+                    <tr class="schedule-6b" style="display: none;">
+                        <td>Вторник</td>
+                        <td>Биология</td>
+                        <td>Математика</td>
+                        <td>География</td>
+                        <td>Химия</td>
+                        <td>Физика</td>
+                        <td>История</td>
+                        <td>Физкультура</td>
+                        <td>Технология</td>
+                    </tr>
+                    <!-- Повторить для остальных классов (7А, 7Б, ..., 11А, 11Б) -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <div class="container">
+            <h2>Контакты</h2>
+            <p>Адрес: ул. Школьная, 123, Дедовск</p>
+            <p>Телефон: +7 (123) 456-78-90</p>
+            <p>Email: school@example.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Моу Дедовская Сош 1. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
